@@ -42,7 +42,7 @@
  void mergesort(int a[],int low,int high)
  {
     int mid;
-    while(low<high)
+    if(low<high)   //this has to be IF not WHILE
     {
         mid=(low+high)/2;
         mergesort(a,low,mid);
